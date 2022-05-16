@@ -23,8 +23,9 @@ body {
 	display: block;
 	position: absolute;
 	margin: 20px auto 40px;
+	color: white;
 	border: 5px solid lightgrey;
-	background-color: rgb(00,00,00,75%);
+	background-color: rgba(255, 255, 255, 0.75);
 	border-radius: 10px;
 	padding: var(--mission-info-padding);
 	width: var(--mission-info-width);
