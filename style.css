@@ -3,13 +3,39 @@
 	padding: 0;
 }
 
+:root {
+	--mission-info-width: 100px;
+	--mission-info-height: 100px;
+	--mission-info-padding: 10px;
+	--canvas-width: 45vw;
+}
+
 body {
-	background: #f2f2f2;
+	background: darkgrey;
+}
+
+.container {
+	display: flex;
+	
+}
+
+.mission-info {
+	display: block;
+	position: absolute;
+	margin: 20px auto 40px;
+	border: 5px solid lightgrey;
+	background-color: rgb(00,00,00,75%);
+	border-radius: 10px;
+	padding: var(--mission-info-padding);
+	width: var(--mission-info-width);
+	height: var(--mission-info-height);
 }
 
 canvas {
 	display: block;
 	margin: 20px auto 40px;
-	border: 1px solid #333;
-	height: 100vh;
+		position: absolute;
+	border: 10px solid lightgrey;
+	border-radius: 10px;
+	height: calc(100vh - 80px);
 }
