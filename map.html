@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Code of Conduct: The Game</title>
+</head>
+
+<body class="map">
+    <img class="map" src="map.png">
+    <div class="map-wrapper">
+        <div class="marker mountains" onclick="fillData(`Mountains`, `Grass shoots, various herbs, ferns and wild berries`, `Big cliffs and holes in the rock`)"></div>
+        <div class="marker hole" onclick="fillData(`Da Hole`, `It is a hole, so only lichen and other hole-plants live down there. What did you expect?`, `Lava pockets`)"></div>
+        <div class="marker lake" onclick="fillData(`Big Pit with Water`, `Underwater sea things like algae`, `Fake sand 👀`)"></div>
+        <div class="marker lava" onclick="fillData(`Pit with Very Very Very Hot Stuff`, `Everything that touhes the hot stuff dies, so no plants survive near here`, `The Very Very Very Hot Stuff`)"></div>
+        <div class="marker forest" onclick="fillData(`Tall Plants with Brown Stem and Green Decoration`, `The Tall Plants with Brown Stem and Green Decoration`, `Nothing really...`)"></div>
+    </div>
+    <div class="instructions">
+          <br><br><h1> <span style="color: white;"> Welcome to</span> <strong> Island</strong></h1>
+          <p><i style="font-size: smaller;">Pronounced <strong onclick="">Ize lind</strong></i></p><br>
+          <p><strong>Island</strong> has many different environments to explore. Click on the dots to the left to explore one.</p>
+
+          <div class="env-info"><br>
+            Name: <strong id="name">---</strong>
+            <br><br>
+            Common Plants: <strong id="plants">---</strong>
+            <br><br>
+            Hazards: <strong id="hazards">---</strong>
+            <br><br><br>
+            <button id="play">EXPLORE</button>
+        </div>
+    </div>
+    <script src="map.js"></script>
+
+</body>

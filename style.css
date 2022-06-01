@@ -1,5 +1,8 @@
-body * {
+body *,
+body {
+	color: white;
 	font-family: 'Courier New', Courier, monospace;
+	background-color: #242325;
 }
 
 signin {
@@ -8,7 +11,7 @@ signin {
 }
 
 a {
-	color: inherit;
+	color: #5c7aff;
 }
 
 a:hover {
@@ -16,27 +19,29 @@ a:hover {
 	animation: 500ms;
 }
 
+h1,
+strong,
+b,
+th {
+	color: #5c7aff;
+}
+
+
+
 #welcome {
 	text-align: center;
 }
 
 table {
-	font-family: arial, sans-serif;
 	border-collapse: collapse;
 	width: 100%;
 }
 
 td,
 th {
-	border: 1px solid #dddddd;
 	text-align: left;
 	padding: 8px;
 }
-
-tr:nth-child(2) {
-	background-color: #dddddd;
-}
-
 
 
 body.canvas {
@@ -45,7 +50,7 @@ body.canvas {
 	height: 100vh;
 	width: 100vw;
 	overflow: hidden;
-		background-color: #333;
+	background-color: #242325;
 }
 
 
@@ -72,18 +77,33 @@ body.canvas .points:hover {
 button {
 	cursor: pointer;
 	border-radius: 5px;
-	border: 1px solid black;
-	background-color: white;
-	border-bottom: 5px solid rgba(0, 0, 0, 0.783);
+	color: #5c7aff;
+	border: 2.5px solid #5c7aff;
+	background-color: rgb(00, 00, 00, 10%);
+	border-bottom: 5px solid #5c7aee;
 	padding: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
 	border-radius: 5px;
+}
+
+button:hover {
 	transition: 500ms;
+	font-size: bigger;
 }
 
 table col[type="points"] {
 	align-items: center;
+}
+
+th {
+	border: none;
+}
+
+
+td {
+	border: none;
+	border-bottom: 1px solid white;
 }
 
 button.play {
@@ -97,3 +117,213 @@ button.play {
 button.play:hover {
 	font-size: 35px;
 }
+
+.customization {
+	padding-top: 30px;
+}
+
+.customization .ball {
+	background-color: rgb(255, 255, 255);
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin: auto;
+	padding: 10px;
+}
+
+.customization .color {
+	width: 15px;
+	height: 15px;
+	display: inline-flex;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	transition: 500ms;
+margin: 15px;
+	border-radius: 15px;
+}
+
+.customization .color:hover {
+	width: 25px;
+	margin-top: 25px;
+	height: 25px;
+}
+
+.customization {
+	text-align: center;
+	align-content: center;
+}
+
+.customization-button {
+	position: absolute;
+	bottom: 20px;
+	right: calc(35% + 700px);
+	left: 35%;
+	font-size: 24px;
+}
+
+.canvas .bg {
+	width: 100%;
+	height: 100%;
+	z-index: 1000000000000000000000000;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: none;
+	left: 0;
+	right: 0;
+	align-content: center;
+	justify-content: center;
+
+}
+
+
+
+.canvas .bg button {
+	position: absolute;
+	bottom: 20px;
+	margin-left: 0;
+}
+
+.canvas .bg .points-scored {
+	font-size: 50px;
+	text-align: center;
+	display: inline-flex;
+	align-content: center;
+	justify-content: center;
+
+}
+
+.canvas .bg .counter {
+	height: 50%;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.canvas .bg .colors-won .color {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	cursor: pointer;
+	transition: 500ms;
+	margin: 10px;
+	border-radius: 15px;
+}
+
+.canvas .bg .colors-won .color {
+	width: 25px;
+	height: 25px;
+}
+
+body.map img.map {
+	min-height: 90vh;
+	max-height: 90vh;
+	position: absolute;
+	top: 0;
+	background-color: transparent;
+	left: 0;
+}
+
+body.map div.map-wrapper {
+	min-height: 90vh;
+	max-height: 90vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	min-width: 90vw;
+	max-width: 90vw;
+} 
+
+body.map div.map-wrapper div.marker {
+	animation: pulse 5s infinite;
+	position: absolute;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+body.map div.map-wrapper div.marker.mountains {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 100px;
+	border-radius: 50%;
+	left: 175px;
+}
+
+
+body.map div.map-wrapper div.marker.forest {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 120px;
+	border-radius: 50%;
+	left: 375px;
+}
+
+body.map div.map-wrapper div.marker.hole {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 230px;
+	border-radius: 50%;
+	left: 505px;
+}
+
+body.map div.map-wrapper div.marker.lake {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 255px;
+	border-radius: 50%;
+	left: 350px;
+}
+
+body.map div.map-wrapper div.marker.lava {
+	position: absolute;
+	width: 125px;
+	height: 135px;
+	top: 410px;
+	border-radius: 50%;
+	left: 385px;
+}
+
+
+@keyframes pulse {
+	0% {
+		background-color: rgb(255, 255, 255, 5%);
+	}
+
+	20% {
+		background-color: rgb(255, 255, 255, 15%);
+	}
+
+  
+	 40% { 
+		background-color: rgb(255, 255, 255, 5%);
+	} 
+  
+	60% { 
+		background-color: rgb(255, 255, 255, 15%);
+	} 
+
+	80% {
+
+		background-color: rgb(255, 255, 255, 5%);
+	}
+
+	100% {
+		background-color: rgb(255, 255, 255, 15%);
+
+	}
+}
+
+body.map div.instructions {
+	position: absolute;
+	left: 800px;
+}
+
+body.map div.instructions div.env-info button#play {
+	font-size: smaller;
+}
+
