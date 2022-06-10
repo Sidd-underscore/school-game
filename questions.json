@@ -167,6 +167,47 @@
       "all_ansers_req": false
   },
   {
-      "question": "Give one example "
+      "question": "Give one example of Relational Agression.",
+      "answer": [
+        "unwelcome teasing",
+        "teasing",
+        "unwelcome",
+        "name-calling",
+        "name calling",
+        "names",
+        "calling",
+        "exluding",
+        "exlusion",
+        "humiliation",
+        "humiliating",
+        "rumors",
+        "spreading",
+        "rumor",
+        "harmful",
+        "harmful jokes",
+        "jokes",
+        "threatening",
+        "threats",
+        "disrespeting",
+        "disrespect",
+        "property",
+        "coercing",
+        "corce",
+        "maninupulating",
+        "manipulation"
+      ],
+      "all_ansers_req": false
+  },
+  {
+    "question": "Can posting things on Social Media negatively affect someone?",
+    "answer": [
+      "yes",
+      "yeah",
+      "ya",
+      "ye",
+      "yup",
+      "mhm"
+    ],
+    "all_ansers_req": false
   }
 ]
