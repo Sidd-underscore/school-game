@@ -1105,6 +1105,8 @@ function askQ(callback, loop) {
 
 
 	const randomElement = questions[Math.floor(Math.random() * questions.length)];
+	console.log(randomElement)
+
 	var prompted = prompt(randomElement.question)
 	var answer = randomElement.answer
 	var asnwersreq = randomElement.all_ansers_req
