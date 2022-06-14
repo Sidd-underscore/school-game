@@ -887,9 +887,17 @@ function die() {
 }
 
 function askQ(callback, loop) {
-	var question = prompt('hello')
-	if (question === 'hi') {
-		alert('Nice! Added 10 points and unlocked a new ball color!')
+	var questions = [
+]
+
+const randomElement = questions[Math.floor(Math.random() * questions.length)];
+	var prompted = prompt(randomElement.question)
+	var answer = randomElement.answer
+	var asnwersreq = randomElement.all_ansers_req
+	if (asnwersreq) {
+		var isEvery = answer.every(item => prompted.toLowerCase().includes(item));
+		if (isEvery === true) {
+			alert('Nice! Added 10 points and unlocked a new ball color!')
 		if (!localStorage.getItem('colors')) {
 			localStorage.setItem('colors', '[]')
 
@@ -909,6 +917,16 @@ function askQ(callback, loop) {
 		}
 		return 'correct';
 
+		}
+
+	} else {
+		
+	}
+	
+	if (prompted.toLowerCase === answer) {
+
+
+		
 	} else {
 		alert('Wrong anser, removed 10 points.')
 		removePoints(10)
