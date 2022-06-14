@@ -1,4 +1,3 @@
-
 var prefferedColor = localStorage.getItem('p-color')
 
 var map = {
@@ -101,6 +100,7 @@ var map = {
 
 	data: [],
 
+	/* An array representing the map tiles. Each number corresponds to a key */
 
 
 	/* Default gravity of the map */
@@ -400,227 +400,194 @@ function die() {
 	window.location.reload()
 }
 
+
+
 function askQ(callback, loop) {
 	var questions = [
+  {
+    "question": "What 3 values are we guided by?",
+    "answer": [
+      "respect",
+      "responsibility",
+      "safety"
+    ],
+    "all_ansers_req": true
+  },
+  {
+    "question": "Name a value we are guided by.",
+    "answer": [
+      "respect",
+      "responsibility",
+      "safety"
+    ],
+    "all_ansers_req": false
+  },
+  {
+    "question": "What group of people would be a 'Respource Group'?",
+    "answer": [
+      "head of school",
+	  "head",
+      "middle school division head",
+      "advisor",
+      "teacher",
+      "counselor",
+      "adult employees"
+    ],
+    "all_ansers_req": false
+  },
+  {
+    "question": "What 9 learner traits are we guided by?",
+    "answer": [
+      "caring",
+      "principled",
+      "thinker",
+      "communicator",
+      "open-minded",
+      "risk-taker",
+      "balanced",
+      "reflective",
+      "knowledgeable"
+    ],
+    "all_ansers_req": true
+  },
+  {
+    "question": "Respect is critical to what?",
+    "answer": [
+      "fostering a healthy and thriving school community",
+      "community",
+      "healthy community",
+		"communities"
 
-		{
-			"question": "What 3 values are we guided by?",
-			"answer": [
-				"respect",
-				"responsibility",
-				"safety"
-			],
-			"all_ansers_req": true
-		},
-		{
-			"question": "Name a value we are guided by.",
-			"answer": [
-				"respect",
-				"responsibility",
-				"safety"
-			],
-			"all_ansers_req": false
-		},
-		{
-			"question": "What group of people would be a 'Respource Group'?",
-			"answer": [
-				"head of school",
-				"middle school division head",
-				"advisor",
-				"teacher",
-				"counselor",
-				"adult employees"
-			],
-			"all_ansers_req": false
-		},
-		{
-			"question": "What 9 learner traits are we guided by?",
-			"answer": [
-				"caring",
-				"principled",
-				"thinker",
-				"communicator",
-				"open-minded",
-				"risk-taker",
-				"balanced",
-				"reflective",
-				"knowledgeable"
-			],
-			"all_ansers_req": true
-		},
-		{
-			"question": "Respect is critical to what?",
-			"answer": [
-				"fostering a healthy and thriving school community",
-				"community",
-				"healthy community"
-			],
-			"all_ansers_req": false
-		},
-		{
-			"question": "Where do we show respect?",
-			"answer": [
-				"community",
-				"learning",
-				"property",
-				"buildings",
-				"tools",
-				"nature"
-			],
-			"all_ansers_req": false
-		},
-		{
-			"question": "How do we show repsect in a community? Name as many things as possible.",
-			"answer": [
-				"speak",
-				"the way we speak",
-				"how we treat people",
-				"avoiding harmful behaviors",
-				"avoiding harmful",
-				"kind",
-				"differences"
-			],
-			"all_ansers_req": false
-		},
-		{
-			"question": "What rights do children have at school regarding respect? Name as many things as possible.",
-			"answer": [
-				"be at school",
-				"equal",
-				"receive attention",
-				"deserve",
-				"addressed politely",
-				"politely",
-				"feel safe",
-				"safe",
-				"voicing",
-				"alone",
-				"request",
-				"keep",
-				"to themselves",
-				"to ourselves",
-				"no touching",
-				"no grabbing"
-			],
-			"all_ansers_req": false
-		},
-		{
-			"question": "What expctations do children have at school regarding respect?  Name as many as you can.",
-			"answer": [
-				"considerate",
-				"empathy",
-				"empathic",
-				"accept others",
-				"no fighting",
-				"abstain from fighting",
-				"non-desired sexual action",
-				"no sexual",
-				"report actions",
-				"no disrespect",
-				"privacy",
-				"repsect privacy",
-				"listen to adults",
-				"listen",
-				"appropriate language",
-				"appropriate",
-				"no profanity",
-				"caring"
-			],
-			"all_ansers_req": false
-		},
-		{
-			"question": "Name as many acts that are considered violent that you know. Know that hese are *absolutely* not allowed",
-			"answer": [
-				"pushing",
-				"shoving",
-				"tripping",
-				"kicking",
-				"spitting",
-				"biting",
-				"grabbing"
-			],
-			"all_ansers_req": false
-		},
-		{
-			"question": "State one unacceptable non-verbal action.",
-			"answer": [
-				"gestures",
-				"symbols",
-				"rudness",
-				"rude",
-				"disrespect",
-				"disrespectful",
-				"vulgar",
-				"spreading rumors",
-				"rumors",
-				"rolling of eyes"
-			],
-			"all_ansers_req": false
-		},
-		{
-			"question": "How does the French American International School define realtional aggression?",
-			"answer": [
-				"harms",
-				"behavior",
-				"actions",
-				"action",
-				"damge",
-				"threat of damage",
-				"teasing"
-			],
-			"all_ansers_req": false
-		},
-		{
-			"question": "Give one example of Relational Agression.",
-			"answer": [
-				"unwelcome teasing",
-				"teasing",
-				"unwelcome",
-				"name-calling",
-				"name calling",
-				"names",
-				"calling",
-				"exluding",
-				"exlusion",
-				"humiliation",
-				"humiliating",
-				"rumors",
-				"spreading",
-				"rumor",
-				"harmful",
-				"harmful jokes",
-				"jokes",
-				"threatening",
-				"threats",
-				"disrespeting",
-				"disrespect",
-				"property",
-				"coercing",
-				"corce",
-				"maninupulating",
-				"manipulation"
-			],
-			"all_ansers_req": false
-		},
-		{
-			"question": "Can posting things on Social Media negatively affect someone?",
-			"answer": [
-				"yes",
-				"yeah",
-				"ya",
-				"ye",
-				"yup",
-				"mhm"
-			],
-			"all_ansers_req": false
-		}
-	]
+    ],
+    "all_ansers_req": false
+  },
+  {
+    "question": "When/WHere do we show respect?",
+    "answer": [
+      "community",
+      "learning",
+      "property",
+      "buildings",
+	  "everywhere",
+	  "anywhere",
+	  "all",
+	  "time",
+      "tools",
+	  "all the time",
+	  "all",
+      "nature"
+    ],
+    "all_ansers_req": false
+  },
+  {
+    "question": "How do we show repsect in a community? Name as many things as possible.",
+    "answer": [
+      "speak",
+      "the way we speak",
+      "how we treat people",
+      "avoiding harmful behaviors",
+      "avoiding harmful",
+      "kind",
+      "differences"
+    ],
+    "all_ansers_req": false
+  },
+  {
+    "question": "What rights do children have at school regarding respect? Name as many things as possible.",
+    "answer": [
+      "be at school",
+      "equal",
+      "receive attention",
+      "deserve",
+      "addressed politely",
+      "politely",
+      "feel safe",
+      "safe",
+      "voicing",
+      "alone",
+      "request",
+      "keep",
+      "to themselves",
+      "to ourselves",
+      "no touching",
+      "no grabbing"
+    ],
+    "all_ansers_req": false
+  },
+  {
+    "question": "What expctations do children have at school regarding respect?  Name as many as you can.",
+    "answer": [
+      "considerate",
+      "empathy",
+      "empathic",
+      "accept others",
+      "no fighting",
+      "abstain from fighting",
+      "non-desired sexual action",
+      "no sexual",
+      "report actions",
+      "no disrespect",
+      "privacy",
+      "repsect privacy",
+      "listen to adults",
+      "listen",
+      "appropriate language",
+      "appropriate",
+      "no profanity",
+      "caring"
+    ],
+    "all_ansers_req": false
+  },
+  {
+    "question": "Name as many acts that are considered violent that you know. Know that hese are *absolutely* not allowed",
+    "answer": [
+      "pushing",
+      "shoving",
+      "tripping",
+      "kicking",
+      "spitting",
+      "hitting",
+      "biting",
+      "grabbing"
+    ],
+    "all_ansers_req": false
+  },
+  {
+    "question": "State one unacceptable non-verbal action.",
+    "answer": [
+      "gestures",
+      "symbols",
+      "rudness",
+      "rude",
+      "disrespect",
+      "disrespectful",
+      "vulgar",
+      "spreading rumors",
+      "rumors",
+	  "rolling",
+	  "eyes",
+	  "rolling the eyes",
+      "rolling of eyes"
+    ],
+    "all_ansers_req": false
+  },
+  {
+      "question": "How does the French American International School define realtional aggression?",
+      "answer": [
+          "harms",
+          "behavior",
+		  "bad",
+          "actions",
+          "action",
+          "damge",
+          "threat of damage",
+          "teasing"
+      ],
+      "all_ansers_req": false
+  }
+]
 
-
-
-	const randomElement = questions[Math.floor(Math.random() * questions.length)];
-	console.log(randomElement)
-
+const randomElement = questions[Math.floor(Math.random() * questions.length)];
 	var prompted = prompt(randomElement.question)
 	var answer = randomElement.answer
 	var asnwersreq = randomElement.all_ansers_req
@@ -647,24 +614,47 @@ function askQ(callback, loop) {
 			}
 			return 'correct';
 
+		} else {
+			alert('Wrong anser, removed 10 points.')
+			removePoints(10)
+			if (loop === 'yes') {
+				alert('Summoning new question...')
+				askQ(callback, loop)
+			}
+			return 'incorrect';
 		}
-
 	} else {
+		if (answer.includes(prompted.toLowerCase())) {
+			alert('Nice! Added 10 points and unlocked a new ball color!')
+			if (!localStorage.getItem('colors')) {
+				localStorage.setItem('colors', '[]')
 
-	}
+			}
 
-	if (prompted.toLowerCase === answer) {
+			var colors = JSON.parse(localStorage.getItem('colors'))
+			var color = "#" + (Math.random() * 0xFFFFFF << 0).toString(16);
 
+			colors.push(color)
+			colorarray.push(color)
 
+			localStorage.setItem('colors', JSON.stringify(colors))
 
-	} else {
-		alert('Wrong anser, removed 10 points.')
-		removePoints(10)
-		if (loop === 'yes') {
-			alert('Summoning new question...')
-			askQ(callback, loop)
-		}
+			givePoints(10)
+			if (callback) {
+				eval(callback)
+			}
+			return 'correct';
+		} else {
+			alert('Wrong anser, removed 10 points.')
+			removePoints(10)
+			if (loop === 'yes') {
+				alert('Summoning new question...')
+				askQ(callback, loop)
+			}
 		return 'incorrect';
+
+
+		}
 	}
 }
 
@@ -783,20 +773,8 @@ Clarity.prototype.keyup = function (e) {
 
 };
 
-if (window.location.href === 'https://sidd-underscore.github.io/school-game/maps/big%20pit%20with%20water.html') {
-	map.data = map.lake;
-} else if (window.location.href === 'https://sidd-underscore.github.io/school-game/maps/da%20hole.html') {
-	map.data = map.da_hole;
-} else if (window.location.href === 'https://sidd-underscore.github.io/school-game/maps/mountains.html') {
-	map.data = map.mountains;
-} else if (window.location.href === 'https://sidd-underscore.github.io/school-game/maps/tall%20plants%20with%20brown%20stem%20and%20green%20decoration.html') {
-	map.data = map.forest;
-} else if (window.location.href === 'https://sidd-underscore.github.io/school-game/maps/pit%20with%20very%20very%20very%20hot%20stuff.html') {
-	map.data = map.lava;
-} else {
-	//window.location.href = "../map.html"
-}
 
+map.data = map_data
 
 
 Clarity.prototype.load_map = function (map) {
