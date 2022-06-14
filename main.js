@@ -888,40 +888,40 @@ function die() {
 
 function askQ(callback, loop) {
 	var questions = [
-		[
-			{
-			  "question": "What 3 values are we guided by?",
-			  "answer": [
+
+		{
+			"question": "What 3 values are we guided by?",
+			"answer": [
 				"respect",
 				"responsibility",
 				"safety"
-			  ],
-			  "all_ansers_req": true
-			},
-			{
-			  "question": "Name a value we are guided by.",
-			  "answer": [
+			],
+			"all_ansers_req": true
+		},
+		{
+			"question": "Name a value we are guided by.",
+			"answer": [
 				"respect",
 				"responsibility",
 				"safety"
-			  ],
-			  "all_ansers_req": false
-			},
-			{
-			  "question": "What group of people would be a 'Respource Group'?",
-			  "answer": [
+			],
+			"all_ansers_req": false
+		},
+		{
+			"question": "What group of people would be a 'Respource Group'?",
+			"answer": [
 				"head of school",
 				"middle school division head",
 				"advisor",
 				"teacher",
 				"counselor",
 				"adult employees"
-			  ],
-			  "all_ansers_req": false
-			},
-			{
-			  "question": "What 9 learner traits are we guided by?",
-			  "answer": [
+			],
+			"all_ansers_req": false
+		},
+		{
+			"question": "What 9 learner traits are we guided by?",
+			"answer": [
 				"caring",
 				"principled",
 				"thinker",
@@ -931,33 +931,33 @@ function askQ(callback, loop) {
 				"balanced",
 				"reflective",
 				"knowledgeable"
-			  ],
-			  "all_ansers_req": true
-			},
-			{
-			  "question": "Respect is critical to what?",
-			  "answer": [
+			],
+			"all_ansers_req": true
+		},
+		{
+			"question": "Respect is critical to what?",
+			"answer": [
 				"fostering a healthy and thriving school community",
 				"community",
 				"healthy community"
-			  ],
-			  "all_ansers_req": false
-			},
-			{
-			  "question": "Where do we show respect?",
-			  "answer": [
+			],
+			"all_ansers_req": false
+		},
+		{
+			"question": "Where do we show respect?",
+			"answer": [
 				"community",
 				"learning",
 				"property",
 				"buildings",
 				"tools",
 				"nature"
-			  ],
-			  "all_ansers_req": false
-			},
-			{
-			  "question": "How do we show repsect in a community? Name as many things as possible.",
-			  "answer": [
+			],
+			"all_ansers_req": false
+		},
+		{
+			"question": "How do we show repsect in a community? Name as many things as possible.",
+			"answer": [
 				"speak",
 				"the way we speak",
 				"how we treat people",
@@ -965,12 +965,12 @@ function askQ(callback, loop) {
 				"avoiding harmful",
 				"kind",
 				"differences"
-			  ],
-			  "all_ansers_req": false
-			},
-			{
-			  "question": "What rights do children have at school regarding respect? Name as many things as possible.",
-			  "answer": [
+			],
+			"all_ansers_req": false
+		},
+		{
+			"question": "What rights do children have at school regarding respect? Name as many things as possible.",
+			"answer": [
 				"be at school",
 				"equal",
 				"receive attention",
@@ -987,12 +987,12 @@ function askQ(callback, loop) {
 				"to ourselves",
 				"no touching",
 				"no grabbing"
-			  ],
-			  "all_ansers_req": false
-			},
-			{
-			  "question": "What expctations do children have at school regarding respect?  Name as many as you can.",
-			  "answer": [
+			],
+			"all_ansers_req": false
+		},
+		{
+			"question": "What expctations do children have at school regarding respect?  Name as many as you can.",
+			"answer": [
 				"considerate",
 				"empathy",
 				"empathic",
@@ -1011,12 +1011,12 @@ function askQ(callback, loop) {
 				"appropriate",
 				"no profanity",
 				"caring"
-			  ],
-			  "all_ansers_req": false
-			},
-			{
-			  "question": "Name as many acts that are considered violent that you know. Know that hese are *absolutely* not allowed",
-			  "answer": [
+			],
+			"all_ansers_req": false
+		},
+		{
+			"question": "Name as many acts that are considered violent that you know. Know that hese are *absolutely* not allowed",
+			"answer": [
 				"pushing",
 				"shoving",
 				"tripping",
@@ -1024,12 +1024,12 @@ function askQ(callback, loop) {
 				"spitting",
 				"biting",
 				"grabbing"
-			  ],
-			  "all_ansers_req": false
-			},
-			{
-			  "question": "State one unacceptable non-verbal action.",
-			  "answer": [
+			],
+			"all_ansers_req": false
+		},
+		{
+			"question": "State one unacceptable non-verbal action.",
+			"answer": [
 				"gestures",
 				"symbols",
 				"rudness",
@@ -1040,69 +1040,69 @@ function askQ(callback, loop) {
 				"spreading rumors",
 				"rumors",
 				"rolling of eyes"
-			  ],
-			  "all_ansers_req": false
-			},
-			{
-				"question": "How does the French American International School define realtional aggression?",
-				"answer": [
-					"harms",
-					"behavior",
-					"actions",
-					"action",
-					"damge",
-					"threat of damage",
-					"teasing"
-				],
-				"all_ansers_req": false
-			},
-			{
-				"question": "Give one example of Relational Agression.",
-				"answer": [
-				  "unwelcome teasing",
-				  "teasing",
-				  "unwelcome",
-				  "name-calling",
-				  "name calling",
-				  "names",
-				  "calling",
-				  "exluding",
-				  "exlusion",
-				  "humiliation",
-				  "humiliating",
-				  "rumors",
-				  "spreading",
-				  "rumor",
-				  "harmful",
-				  "harmful jokes",
-				  "jokes",
-				  "threatening",
-				  "threats",
-				  "disrespeting",
-				  "disrespect",
-				  "property",
-				  "coercing",
-				  "corce",
-				  "maninupulating",
-				  "manipulation"
-				],
-				"all_ansers_req": false
-			},
-			{
-			  "question": "Can posting things on Social Media negatively affect someone?",
-			  "answer": [
+			],
+			"all_ansers_req": false
+		},
+		{
+			"question": "How does the French American International School define realtional aggression?",
+			"answer": [
+				"harms",
+				"behavior",
+				"actions",
+				"action",
+				"damge",
+				"threat of damage",
+				"teasing"
+			],
+			"all_ansers_req": false
+		},
+		{
+			"question": "Give one example of Relational Agression.",
+			"answer": [
+				"unwelcome teasing",
+				"teasing",
+				"unwelcome",
+				"name-calling",
+				"name calling",
+				"names",
+				"calling",
+				"exluding",
+				"exlusion",
+				"humiliation",
+				"humiliating",
+				"rumors",
+				"spreading",
+				"rumor",
+				"harmful",
+				"harmful jokes",
+				"jokes",
+				"threatening",
+				"threats",
+				"disrespeting",
+				"disrespect",
+				"property",
+				"coercing",
+				"corce",
+				"maninupulating",
+				"manipulation"
+			],
+			"all_ansers_req": false
+		},
+		{
+			"question": "Can posting things on Social Media negatively affect someone?",
+			"answer": [
 				"yes",
 				"yeah",
 				"ya",
 				"ye",
 				"yup",
 				"mhm"
-			  ],
-			  "all_ansers_req": false
-			}
-		  ]
-		  
+			],
+			"all_ansers_req": false
+		}
 	]
+
+
 
 	const randomElement = questions[Math.floor(Math.random() * questions.length)];
 	var prompted = prompt(randomElement.question)
