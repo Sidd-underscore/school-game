@@ -1267,15 +1267,15 @@ Clarity.prototype.keyup = function (e) {
 
 };
 
-if (window.location.href === 'file:///home/chronos/u-176067b4269d188e0a92d9d930c6c7a042cf46d8/MyFiles/Downloads/school-game-main/maps/big%20pit%20with%20water.html') {
+if (window.location.href === 'https://sidd-underscore.github.io/school-game/maps/big%20pit%20with%20water.html') {
 	map.data = map.lake;
-} else if (window.location.href === 'file:///home/chronos/u-176067b4269d188e0a92d9d930c6c7a042cf46d8/MyFiles/Downloads/school-game-main/maps/da%20hole.html') {
+} else if (window.location.href === 'https://sidd-underscore.github.io/school-game/maps/da%20hole.html') {
 	map.data = map.da_hole;
-} else if (window.location.href === 'file:///home/chronos/u-176067b4269d188e0a92d9d930c6c7a042cf46d8/MyFiles/Downloads/school-game-main/maps/mountains.html') {
+} else if (window.location.href === 'https://sidd-underscore.github.io/school-game/maps/mountains.html') {
 	map.data = map.mountains;
 } else if (window.location.href === 'https://sidd-underscore.github.io/school-game/maps/tall%20plants%20with%20brown%20stem%20and%20green%20decoration.html') {
 	map.data = map.forest;
-} else if (window.location.href === 'file:///home/chronos/u-176067b4269d188e0a92d9d930c6c7a042cf46d8/MyFiles/Downloads/school-game-main/maps/pit%20with%20very%20very%20very%20hot%20stuff.html') {
+} else if (window.location.href === 'https://sidd-underscore.github.io/school-game/maps/pit%20with%20very%20very%20very%20hot%20stuff.html') {
 	map.data = map.lava;
 } else {
 	//window.location.href = "../map.html"
