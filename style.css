@@ -233,16 +233,17 @@ body.map img.map {
 	min-height: 90vh;
 	max-height: 90vh;
 	position: absolute;
-	top: 0;
+	/* top: 0; */
 	background-color: transparent;
 	left: 0;
 }
 
 body.map div.map-wrapper {
+	width: 100%;
 	min-height: 90vh;
 	max-height: 90vh;
 	position: absolute;
-	top: 0;
+	/* top: 40px;  */
 	left: 0;
 	background-color: transparent;
 	min-width: 90vw;
@@ -260,9 +261,9 @@ body.map div.map-wrapper div.marker.mountains {
 	position: absolute;
 	width: 100px;
 	height: 100px;
-	top: 100px;
+	top: 90px;
 	border-radius: 50%;
-	left: 175px;
+	left: 150px;
 }
 
 
@@ -270,36 +271,40 @@ body.map div.map-wrapper div.marker.forest {
 	position: absolute;
 	width: 100px;
 	height: 100px;
-	top: 120px;
+	top: 100px;
 	border-radius: 50%;
-	left: 375px;
+	left: 340px;
 }
 
 body.map div.map-wrapper div.marker.hole {
 	position: absolute;
 	width: 100px;
 	height: 100px;
-	top: 230px;
+	top: 200px;
 	border-radius: 50%;
-	left: 505px;
+	left: 440px;
 }
 
 body.map div.map-wrapper div.marker.lake {
 	position: absolute;
 	width: 100px;
 	height: 100px;
-	top: 255px;
+	top: 220px;
 	border-radius: 50%;
-	left: 350px;
+	left: 305px;
 }
 
 body.map div.map-wrapper div.marker.lava {
 	position: absolute;
 	width: 125px;
 	height: 135px;
-	top: 410px;
+	top: 350px;
 	border-radius: 50%;
-	left: 385px;
+	left: 335px;
+}
+
+body.map div.heading {
+	margin: 10px;
 }
 
 
@@ -311,7 +316,6 @@ body.map div.map-wrapper div.marker.lava {
 	20% {
 		background-color: rgb(255, 255, 255, 15%);
 	}
-
 
 	40% {
 		background-color: rgb(255, 255, 255, 5%);
@@ -334,11 +338,38 @@ body.map div.map-wrapper div.marker.lava {
 
 body.map div.instructions {
 	position: absolute;
-	left: 800px;
+	top: 350px;
+	font-size: 10px;
+	left: 700px;
+	margin: 10px;
+	background: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+	body.map div.instructions {
+		position: absolute;
+		top: 650px;
+		left: 10px !important;
+		font-size: 10px;
+		width: 500px;
+		margin: 10px;
+		width: 250px;
+		background: transparent;
+	}
+}
+
+body.map div.map-div-thing {
+	margin-top: 100px;
 }
 
 body.map div.instructions div.env-info button#play {
 	font-size: smaller;
+}
+
+body.map div.env-info {
+	font-size: 10px;
+	background: transparent;
+
 }
 
 .canvas .rpg .youbutnot * {
@@ -350,7 +381,8 @@ body.map div.instructions div.env-info button#play {
 	left: 20px;
 }
 
-.canvas .rpg .youbutnot .you-talk, .canvas .rpg .notyou .edna-talk {
+.canvas .rpg .youbutnot .you-talk,
+.canvas .rpg .notyou .edna-talk {
 	padding-top: 5%;
 	padding-left: 50px;
 }
@@ -375,6 +407,7 @@ body.map div.instructions div.env-info button#play {
 	align-content: center;
 }
 
-.canvas .rpg, .canvas .rpg * {
+.canvas .rpg,
+.canvas .rpg * {
 	padding: 10px;
 }
