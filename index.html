@@ -57,7 +57,7 @@
           .signInWithPopup(provider)
           .then((res) => {
             console.log(res.user);
-            document.getElementById("LoginScreen").style.display = "none";
+            document.querySelector(".loginscreen").style.display = "none";
             document.getElementById("dashboard").style.display = "block";
             showUserDetails(res.user);
           })
@@ -68,7 +68,7 @@
 
       function showUserDetails(user) {
         document.getElementById("userDetails").innerHTML = `
-          <img src="${user.photoURL}" style="width:10%">
+          <img src="${user.photoURL}" style="width:10%; border-radius: 50%">
           <p>Name: ${user.displayName}</p>
           <p>Email: ${user.email}</p>
         `;
