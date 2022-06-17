@@ -3,6 +3,7 @@ body {
 	color: white;
 	font-family: 'Courier New', Courier, monospace;
 	background-color: #242325;
+	padding: 10px;
 }
 
 signin {
