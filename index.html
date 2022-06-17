@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Firebase Auth: Google - TechFerment</title>
+    <title>Conde of Conduct: The Game</title>
     <link href="style.css" rel="stylesheet"/>
   </head>
   <body>
@@ -14,7 +14,7 @@
       <button onclick="login()">Login with Google</button>
     </div>
 
-    <div id="dashboard">
+    <div style="display: none" id="dashboard">
         <p>Continue with this account?</p>
       <div id="userDetails"></div>
       <button onclick="login()">Login with new account</button>
@@ -91,7 +91,7 @@
           .auth()
           .signOut()
           .then(() => {
-            document.getElementById("LoginScreen").style.display = "block";
+            document.querySelector(".loginscreen").style.display = "block";
             document.getElementById("dashboard").style.display = "none";
           })
           .catch((e) => {
