@@ -16,9 +16,8 @@
 
     <div style="display: none" id="dashboard">
         <p>Continue with this account?</p>
-      <div style="    display: flex;
+      <div style="    display: inline-flex;
       align-content: center;
-      justify-content: center;
       align-items: center;" id="userDetails"></div>
       <button onclick="login()">Login with new account</button>
       <button onclick="logout()">Logout</button>
@@ -74,8 +73,8 @@
           <img src="${user.photoURL}" style="    width: 15%;
     height: 15%;
     border-radius: 50%;">
-          <p>Name: <i> ${user.displayName}</i></p>
-          <p><i>Email: ${user.email}</i></p>
+          <p><b> ${user.displayName}</b></p><br>
+          <p><i>${user.email}</i></p><br>
         `;
       }
 
