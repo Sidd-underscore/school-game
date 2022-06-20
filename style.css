@@ -24,9 +24,14 @@ h1,
 strong,
 b,
 th {
-	color: #5c7aff;
+    color: #5c7aff;
+    padding: 0;
+    background-color: transparent;
 }
 
+i {
+	padding: 0;
+}
 
 
 #welcome {
@@ -231,12 +236,14 @@ button.play:hover {
 }
 
 body.map img.map {
-	min-height: 90vh;
-	max-height: 90vh;
-	position: absolute;
-	/* top: 0; */
-	background-color: transparent;
-	left: 0;
+    /* min-height: 90vh; */
+    /* max-height: 90vh; */
+    height: 601px;
+    width: 650px;
+    position: absolute;
+    /* top: 0; */
+    background-color: transparent;
+    left: 0;
 }
 
 body.map div.map-wrapper {
@@ -349,7 +356,7 @@ body.map div.instructions {
 @media only screen and (max-width: 600px) {
 	body.map div.instructions {
 		position: absolute;
-		top: 650px;
+		top: 708px;
 		left: 10px !important;
 		font-size: 10px;
 		width: 500px;
@@ -368,7 +375,7 @@ body.map div.instructions div.env-info button#play {
 }
 
 body.map div.env-info {
-	font-size: 10px;
+	font-size: 14px;
 	background: transparent;
 
 }
