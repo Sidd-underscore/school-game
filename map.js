@@ -9,6 +9,7 @@ var place_hazards = document.querySelector('#hazards')
 var btn = document.querySelector('#play')
 
 function fillData(des_name, des_plants, des_hazards) {
+    btn.disabled = false
     var l_des_name = des_name.toLowerCase();
     place_name.innerHTML = des_name;
     place_plants.innerHTML = des_plants;
@@ -17,3 +18,7 @@ function fillData(des_name, des_plants, des_hazards) {
         window.location.href = './maps/' + l_des_name + '.html'
     })
 }
+
+$(window).load(function() {
+    $('#loading').hide();
+});
