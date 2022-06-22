@@ -220,11 +220,7 @@ function sea_unlock(id) {
 }
 
 function sea_complete() {
-	var points = getPoints()
-	document.querySelector('.bg').style.display = 'inline-flex';
-	document.querySelector('.points-scored').innerText = points
-	document.querySelector('canvas').style.display = 'none'
-	colorarray.forEach(element => document.querySelector('.colors-won').innerHTML += `<div class="color" style="background-color: ${element}"></div>`)
+nextLevel()
 }
 
 let part_rpg = 0
@@ -667,6 +663,18 @@ function nextLevel() {
 	document.querySelector('.bg').style.display = 'inline-flex';
 	document.querySelector('.points-scored').innerText = points
 	document.querySelector('canvas').style.display = 'none'
+	var db = firebase.firestore();
+    db.collection("user-points")
+      .add({
+        email: email,
+        points: points,
+      })
+      .then((docRef) => {
+        console.log("yay success go brrrrrrrrrrrrrrrrrrrrrrrrrrrrr\nhere be da key though:\n ", docRef.id);
+      })
+      .catch((error) => {
+        console.error("u r very stupid idot \n ", error);
+      });
 	colorarray.forEach(element => document.querySelector('.colors-won').innerHTML += `<div class="color" style="background-color: ${element}"></div>`)
 
 
