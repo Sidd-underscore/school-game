@@ -641,7 +641,7 @@ const randomElement = questions[Math.floor(Math.random() * questions.length)];
 			}
 			return 'correct';
 		} else {
-			alert('Wrong anser, removed 10 points.')
+			alert('Wrong anwser, removed 10 points.')
 			removePoints(10)
 			if (loop === 'yes') {
 				alert('Summoning new question...')
