@@ -458,7 +458,7 @@ function askQ(callback, loop) {
 			"all_ansers_req": false
 		},
 		{
-			"question": "When/WHere do we show respect?",
+			"question": "When/Where do we show respect?",
 			"answer": [
 				"community",
 				"learning",
@@ -511,7 +511,7 @@ function askQ(callback, loop) {
 			"all_ansers_req": false
 		},
 		{
-			"question": "What expctations do children have at school regarding respect?  Name as many as you can.",
+			"question": "What expectations do children have at school regarding respect?  Name as many as you can.",
 			"answer": [
 				"considerate",
 				"empathy",
@@ -540,6 +540,7 @@ function askQ(callback, loop) {
 				"pushing",
 				"shoving",
 				"tripping",
+				"slapping",
 				"kicking",
 				"spitting",
 				"hitting",
